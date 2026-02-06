@@ -1,0 +1,21 @@
+/* 全局样式：隐藏滚动条（视觉上隐藏，但保留滚动行为） */
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+/* Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* 如果还需要彻底禁止滚动（不可滚动），请改为：
+html, body, #app { overflow: hidden; }
+*/
